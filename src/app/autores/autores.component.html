@@ -1,0 +1,15 @@
+<h1>{{this.authorName}} Books</h1>
+<div class="row card-group p-3">
+  <div class="col-4 top-buffer"  *ngFor="let libro of libros">
+      <div class="card border-info">
+        <div class="card-body">
+          <h4 class="card-title">{{libro.book_title}}</h4>
+          <p class="card-text">{{libro.summary}}</p>
+          <a href="{{libro.url}}" target="_blank">Review on NYT ({{libro.publication_dt}})</a>
+        </div>
+        <div class="card-footer border-info">
+          <small class="text-muted">Review published by {{libro.byline}}</small>
+        </div>
+      </div>
+  </div>
+</div>

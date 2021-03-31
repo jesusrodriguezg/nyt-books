@@ -1,0 +1,19 @@
+<h1>{{this.title}}</h1>
+<p>Here you will see the books you desire to get your hands on, so you added them to your wish list. If you already read one of them or are no longer interested in it, simply click on "Delete from wishlist" — and it will be gone away!</p>
+<div class="row card-group p-3">
+  <div class="col-4 top-buffer"  *ngFor="let libro of wishList; let i = index">
+      <div class="card border-info">
+        <div class="card-body">
+          <h4 class="card-title">{{libro.title}}</h4>
+          <h5>{{libro.author}}</h5>
+          <p class="card-text">{{libro.description}}</p>
+          <div class="text-center">
+            <button (click)="(deleteWish(i))" class="btn btn-info">Delete from wishlist</button>
+          </div>
+        </div>
+        <div class="card-footer border-info">
+          <small class="text-muted">Published by {{libro.publisher}}</small>
+        </div>
+      </div>
+  </div>
+</div>

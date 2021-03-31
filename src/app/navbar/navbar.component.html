@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="../assets/images/nyt-logo.png" alt="New York Times Books">
+    </a>
+    <button class="navbar-toggler collapsed" type="button" (click)="toggleState()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse" [ngClass]='{ "collapse": isCollapse }'>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li routerLinkActive="active" class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+          <a class="nav-link" routerLink="/lists">Lists</a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+          <a class="nav-link" routerLink="/wishlist">Wishlist</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search for author..." aria-label="Search" (keyup.enter)="(searchAuthor(author))" [(ngModel)]="author" name="author">
+        <button (click)="(searchAuthor(author))" class="btn btn-outline-light" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<footer class="footer navbar-expand-lg navbar-dark bg-dark">
+  <div class="navbar-dark">
+    <div class="container text-center">
+      <p class="text-muted credit">Jesús Rodríguez González | 2021</p>
+    </div>
+  </div>
+</footer>

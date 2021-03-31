@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300&display=swap');
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+p,div{
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+
+p{
+  padding: 0 20px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+}
+
+nav{
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: 300;
+}
+
+.footer {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.top-buffer{
+  margin-top: 15px;
+}

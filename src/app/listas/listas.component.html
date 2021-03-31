@@ -1,0 +1,5 @@
+<h1>{{title}}</h1>
+<p>Here you have a relation of all New York Times book lists, in no particular order. You can check which books there are in each list just by clicking on the button beside the list name. Next, in the book list, you can add any book to your wishlist!</p>
+<div class="list-group" *ngFor="let lista of listas">
+  <li class="list-group-item list-group-item-action list-group-item-light">{{lista.list_name}}<button (click)="verLista(lista.list_name_encoded)" class="btn btn-info">{{lista.list_name}} books</button></li>
+</div>

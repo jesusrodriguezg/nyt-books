@@ -1,0 +1,24 @@
+<div class="col text-center p-3">
+  <button (click)="onBack()" class="btn btn-info">Back to lists</button>
+</div>
+<h1>{{this.listTitle}} Books</h1>
+<div class="row card-group p-3">
+  <div class="col-4 top-buffer"  *ngFor="let libro of libros; let i = index">
+      <div class="card border-info">
+        <div class="card-body">
+          <h4 class="card-title">{{libro.title}}</h4>
+          <h5>{{libro.author}}</h5>
+          <p class="card-text">{{libro.description}}</p>
+          <div class="text-center">
+            <button (click)="(addWish(libros[i]))" class="btn btn-info">Add to wishlist</button>
+          </div>
+        </div>
+        <div class="card-footer border-info">
+          <small class="text-muted">Published by {{libro.publisher}}</small>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="col text-center p-3">
+  <button (click)="onBack()" class="btn btn-info">Back to lists</button>
+</div>
