@@ -67,6 +67,10 @@ Primero debemos crear un nuevo proyecto con Angular CLI.
 ```sh
 ~$ ng new nyt-books
 ```
+> IMPORTANTE: en el momento de crear el proyecto, la consola nos mostrará un asistente que nos preguntará si queremos habilitar la revisión de tipado estricta, si queremos añadir el routing de Angular y cuál es el formato de estilos que deseamos. Debemos indicar "Y" / "Y" / "CSS".
+
+![alt text](https://hosting.photobucket.com/images/i/jesusrodriguezgonz/options-new-angular-project.png "Angular new project - options")
+
 Luego descargamos o clonamos este repositorio.
 
 ```sh
