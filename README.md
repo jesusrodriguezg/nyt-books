@@ -82,7 +82,7 @@ A continuación debemos sustituir el directorio _nyt-books/src_ con el directori
 
 Una vez haya compilado todo el proyecto, debemos abrir desde el navegador la ruta ```localhost:4200```.
 
-### <a name="5"></a>Funcionamiento
+### <a name="4"></a>Funcionamiento
 
 La aplicación consta de varias secciones y funcionalidades. Al abrirla, encontramos la portada, con un resumen del proyecto. En la parte superior tenemos la barra de navegación, con enlaces a los distintos apartados.
 
@@ -90,7 +90,7 @@ La aplicación consta de varias secciones y funcionalidades. Al abrirla, encontr
 * **Wishlists**: nuestra lista de deseos, donde se van incluyendo los distintos libros que vamos añadiendo manualmente (y que podemos eliminar haciendo clic en el botón correspondiente).
 * **Búsqueda por autor**: si introducimos el nombre de un autor (p.e., Stephen King) en la barra de búsqueda de arriba a la derecha, la aplicación nos devuelve todos los libros de dicho autor en una vista distinta a las anteriores; en cada libro de dicho autor aparece un enlace a la reseña que en su día publicó el New York Times.
 
-### <a name="6"></a>Funciones en desarrollo / mejoras
+### <a name="5"></a>Funciones en desarrollo / mejoras
 
 Algunas funciones que se contemplan para el futuro son:
 
